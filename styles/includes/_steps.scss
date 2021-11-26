@@ -142,6 +142,22 @@
                 }
             }
         }
+        &:nth-child(2) {
+            .landing-step {
+                &__content {
+                    max-width: 345px;
+                }
+                &__pic {
+                    position: relative;
+                    order: 2;
+                    img {
+                        position: static;
+                        transform: translate(-20px, -20px);
+                        width: 100%;
+                    }
+                }
+            }
+        }
         &:last-child {
             .landing-step {
                 &__title {
