@@ -1,0 +1,72 @@
+.landing-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 500px;
+    background: url(../../img/intro.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+    color: #FFF;
+    h1 {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 120%;
+    }
+    p {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 120%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .landing-intro {
+        height: 400px;
+        h1 {
+            font-size: 70px;
+        }
+        p {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .landing-intro {
+        height: 350px;
+        padding: 25px 0;
+        h1 {
+            font-size: 60px;
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .landing-intro {
+        height: 200px;
+        .container {
+            width: 100%;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .landing-intro {
+        padding: 15px 0;
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
