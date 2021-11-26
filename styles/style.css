@@ -1,8 +1,56 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Stolzl';
+  src: url("Stolzl-Light.eot");
+  src: local("Stolzl Light"), local("Stolzl-Light"), url("Stolzl-Light.eot?#iefix") format("embedded-opentype"), url("Stolzl-Light.woff2") format("woff2"), url("Stolzl-Light.woff") format("woff"), url("Stolzl-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  src: url("Stolzl-Thin.eot");
+  src: local("Stolzl Thin"), local("Stolzl-Thin"), url("Stolzl-Thin.eot?#iefix") format("embedded-opentype"), url("Stolzl-Thin.woff2") format("woff2"), url("Stolzl-Thin.woff") format("woff"), url("Stolzl-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stolzl Book';
+  src: url("Stolzl-Book.eot");
+  src: local("Stolzl Book"), local("Stolzl-Book"), url("Stolzl-Book.eot?#iefix") format("embedded-opentype"), url("Stolzl-Book.woff2") format("woff2"), url("Stolzl-Book.woff") format("woff"), url("Stolzl-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  src: url("../fonts/Stolzl-Regular.eot");
+  src: local("../fonts/Stolzl Regular"), local("Stolzl-Regular"), url("../fonts/Stolzl-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Stolzl-Regular.woff2") format("woff2"), url("../fonts/Stolzl-Regular.woff") format("woff"), url("../fonts/Stolzl-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  src: url("../fonts/Stolzl-Bold.eot");
+  src: local("../fonts/Stolzl Bold"), local("Stolzl-Bold"), url("../fonts/Stolzl-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Stolzl-Bold.woff2") format("woff2"), url("../fonts/Stolzl-Bold.woff") format("woff"), url("../fonts/Stolzl-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  src: url("../fonts/Stolzl-Medium.eot");
+  src: local("../fonts/Stolzl Medium"), local("Stolzl-Medium"), url("../fonts/Stolzl-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Stolzl-Medium.woff2") format("woff2"), url("../fonts/Stolzl-Medium.woff") format("woff"), url("../fonts/Stolzl-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Stolzl', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -532,6 +580,9 @@ ul {
   .landing-step__content {
     width: 50%;
   }
+  .landing-step__arrows p {
+    font-size: 115px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -615,6 +666,9 @@ ul {
   .landing-step:first-child {
     position: relative;
   }
+  .landing-step:first-child .landing-step__content {
+    z-index: 1;
+  }
   .landing-step:first-child .landing-step__pic {
     z-index: 1;
   }
@@ -624,7 +678,7 @@ ul {
     bottom: 60px;
     font-weight: 800;
     left: 0;
-    font-size: 150px;
+    font-size: 115px;
     line-height: 80%;
     color: #FFF;
     z-index: -1;
@@ -632,13 +686,15 @@ ul {
   }
   .landing-step__bottom {
     position: absolute;
-    right: 25px;
+    right: 15px;
     bottom: 0;
     font-size: 25px;
     text-align: right;
   }
   .landing-step__bottom::after {
     position: absolute;
+    right: -40px;
+    top: 35px;
     content: "›››››";
     -webkit-transform-origin: 50% 50%;
             transform-origin: 50% 50%;
@@ -807,7 +863,7 @@ ul {
     padding: 20px 0;
   }
   .landing-bottom__hashtag {
-    font-size: 63px;
+    font-size: 59px;
     margin-bottom: 20px;
   }
   .landing-bottom__links {
@@ -823,7 +879,7 @@ ul {
 
 @media (max-width: 600px) {
   .landing-bottom__hashtag {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 10px;
   }
   .landing-bottom__links {
